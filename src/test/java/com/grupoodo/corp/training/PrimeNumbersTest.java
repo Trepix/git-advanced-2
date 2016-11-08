@@ -27,4 +27,10 @@ public class PrimeNumbersTest {
         int number = 37831;
         assertTrue(primeNumbers.isPrime(number));
     }
+    
+    @Test
+    public void whenICallIsPrimeOnTheBiggestIntegerPrime_ThenReturnsTrue() {
+        int number = 2147483647;
+        assertTrue("to big for this algorithm", primeNumbers.isPrime(number));
+    }
 }
